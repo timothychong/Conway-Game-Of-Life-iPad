@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CA765F61533E5A300051946 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C583ED61527A30200622FF3 /* UIKit.framework */; };
+		1CA765F71533E5A300051946 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C583ED81527A30200622FF3 /* Foundation.framework */; };
+		1CA765F81533E5A300051946 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C583EDA1527A30200622FF3 /* CoreGraphics.framework */; };
+		1CA765FE1533E5A300051946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CA765FC1533E5A300051946 /* InfoPlist.strings */; };
+		1CA766001533E5A300051946 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA765FF1533E5A300051946 /* main.m */; };
+		1CA766041533E5A300051946 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA766031533E5A300051946 /* AppDelegate.m */; };
+		1CA766071533E5A300051946 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA766061533E5A300051946 /* MasterViewController.m */; };
+		1CA7660A1533E5A300051946 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA766091533E5A300051946 /* DetailViewController.m */; };
+		1CA7660D1533E5A300051946 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA7660B1533E5A300051946 /* MasterViewController.xib */; };
+		1CA766101533E5A300051946 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA7660E1533E5A300051946 /* DetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C583ED61527A30200622FF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1C583ED81527A30200622FF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1C583EDA1527A30200622FF3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1C583EDE1527A30200622FF3 /* ConwayGameOfLifeiPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConwayGameOfLifeiPad-Info.plist"; sourceTree = "<group>"; };
+		1C583EE01527A30200622FF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1C583EE21527A30200622FF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C583EE41527A30200622FF3 /* ConwayGameOfLifeiPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConwayGameOfLifeiPad-Prefix.pch"; sourceTree = "<group>"; };
+		1C583EE51527A30200622FF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1C583EE61527A30200622FF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1C583EF11527A44700622FF3 /* mainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mainWindow.xib; sourceTree = "<group>"; };
+		1C583EF51527AE4100622FF3 /* Colony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colony.h; sourceTree = "<group>"; };
+		1C583EF61527AE4100622FF3 /* Colony.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colony.m; sourceTree = "<group>"; };
+		1C59317C152D67AB00EBEBCF /* ColorPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPreviewView.h; sourceTree = "<group>"; };
+		1C59317D152D67AB00EBEBCF /* ColorPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPreviewView.m; sourceTree = "<group>"; };
+		1C7283A5152E886400C8B22C /* cellListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellListViewController.h; sourceTree = "<group>"; };
+		1C7283A6152E886400C8B22C /* cellListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellListViewController.m; sourceTree = "<group>"; };
+		1C7283B7152E94FB00C8B22C /* NewColonyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewColonyViewController.h; sourceTree = "<group>"; };
+		1C7283B8152E94FC00C8B22C /* NewColonyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewColonyViewController.m; sourceTree = "<group>"; };
+		1C7283B9152E94FC00C8B22C /* NewColonyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewColonyViewController.xib; sourceTree = "<group>"; };
+		1C7C0BB51527C40200BC2B1E /* ColonyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColonyViewController.h; sourceTree = "<group>"; };
+		1C7C0BB61527C40200BC2B1E /* ColonyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColonyViewController.m; sourceTree = "<group>"; };
+		1C7C0BB71527C40200BC2B1E /* ColonyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColonyViewController.xib; sourceTree = "<group>"; };
+		1C7C0BBB1527C44B00BC2B1E /* ColonyStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColonyStore.h; sourceTree = "<group>"; };
+		1C7C0BBC1527C44B00BC2B1E /* ColonyStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColonyStore.m; sourceTree = "<group>"; };
+		1C7C0BC71527D04300BC2B1E /* ColonyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColonyView.h; sourceTree = "<group>"; };
+		1C7C0BC81527D04300BC2B1E /* ColonyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColonyView.m; sourceTree = "<group>"; };
+		1C7C0BD2152809AC00BC2B1E /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		1C7C0BD3152809AC00BC2B1E /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		1C7C0BD4152809AD00BC2B1E /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		1CA765F41533E5A200051946 /* ConwayGameOfLifeiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConwayGameOfLifeiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA765FB1533E5A300051946 /* ConwayGameOfLifeiPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ConwayGameOfLifeiPad-Info.plist"; sourceTree = "<group>"; };
+		1CA765FD1533E5A300051946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CA765FF1533E5A300051946 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CA766011533E5A300051946 /* ConwayGameOfLifeiPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConwayGameOfLifeiPad-Prefix.pch"; sourceTree = "<group>"; };
+		1CA766021533E5A300051946 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1CA766031533E5A300051946 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1CA766051533E5A300051946 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		1CA766061533E5A300051946 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		1CA766081533E5A300051946 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		1CA766091533E5A300051946 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		1CA7660C1533E5A300051946 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		1CA7660F1533E5A300051946 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		1CC557271532B5C400B5BD72 /* conway game of life.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "conway game of life.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CA765F11533E5A200051946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA765F61533E5A300051946 /* UIKit.framework in Frameworks */,
+				1CA765F71533E5A300051946 /* Foundation.framework in Frameworks */,
+				1CA765F81533E5A300051946 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C583EC71527A30200622FF3 = {
+			isa = PBXGroup;
+			children = (
+				1CC557271532B5C400B5BD72 /* conway game of life.png */,
+				1C583EDC1527A30200622FF3 /* ConwayGameOfLifeiPad */,
+				1CA765F91533E5A300051946 /* ConwayGameOfLifeiPad */,
+				1C583ED51527A30200622FF3 /* Frameworks */,
+				1C583ED31527A30200622FF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C583ED31527A30200622FF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CA765F41533E5A200051946 /* ConwayGameOfLifeiPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C583ED51527A30200622FF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C583ED61527A30200622FF3 /* UIKit.framework */,
+				1C583ED81527A30200622FF3 /* Foundation.framework */,
+				1C583EDA1527A30200622FF3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C583EDC1527A30200622FF3 /* ConwayGameOfLifeiPad */ = {
+			isa = PBXGroup;
+			children = (
+				1C583EE51527A30200622FF3 /* AppDelegate.h */,
+				1C583EE61527A30200622FF3 /* AppDelegate.m */,
+				1C7C0BC71527D04300BC2B1E /* ColonyView.h */,
+				1C7C0BC81527D04300BC2B1E /* ColonyView.m */,
+				1C583EF51527AE4100622FF3 /* Colony.h */,
+				1C583EF61527AE4100622FF3 /* Colony.m */,
+				1C7C0BBB1527C44B00BC2B1E /* ColonyStore.h */,
+				1C7C0BBC1527C44B00BC2B1E /* ColonyStore.m */,
+				1C7C0BB51527C40200BC2B1E /* ColonyViewController.h */,
+				1C7C0BB61527C40200BC2B1E /* ColonyViewController.m */,
+				1C7C0BB71527C40200BC2B1E /* ColonyViewController.xib */,
+				1C7C0BD2152809AC00BC2B1E /* SettingViewController.h */,
+				1C7C0BD3152809AC00BC2B1E /* SettingViewController.m */,
+				1C7C0BD4152809AD00BC2B1E /* SettingViewController.xib */,
+				1C7283A5152E886400C8B22C /* cellListViewController.h */,
+				1C7283A6152E886400C8B22C /* cellListViewController.m */,
+				1C59317C152D67AB00EBEBCF /* ColorPreviewView.h */,
+				1C59317D152D67AB00EBEBCF /* ColorPreviewView.m */,
+				1C7283B7152E94FB00C8B22C /* NewColonyViewController.h */,
+				1C7283B8152E94FC00C8B22C /* NewColonyViewController.m */,
+				1C7283B9152E94FC00C8B22C /* NewColonyViewController.xib */,
+				1C583EF11527A44700622FF3 /* mainWindow.xib */,
+				1C583EDD1527A30200622FF3 /* Supporting Files */,
+			);
+			path = ConwayGameOfLifeiPad;
+			sourceTree = "<group>";
+		};
+		1C583EDD1527A30200622FF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C583EDE1527A30200622FF3 /* ConwayGameOfLifeiPad-Info.plist */,
+				1C583EDF1527A30200622FF3 /* InfoPlist.strings */,
+				1C583EE21527A30200622FF3 /* main.m */,
+				1C583EE41527A30200622FF3 /* ConwayGameOfLifeiPad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CA765F91533E5A300051946 /* ConwayGameOfLifeiPad */ = {
+			isa = PBXGroup;
+			children = (
+				1CA766021533E5A300051946 /* AppDelegate.h */,
+				1CA766031533E5A300051946 /* AppDelegate.m */,
+				1CA766051533E5A300051946 /* MasterViewController.h */,
+				1CA766061533E5A300051946 /* MasterViewController.m */,
+				1CA766081533E5A300051946 /* DetailViewController.h */,
+				1CA766091533E5A300051946 /* DetailViewController.m */,
+				1CA7660B1533E5A300051946 /* MasterViewController.xib */,
+				1CA7660E1533E5A300051946 /* DetailViewController.xib */,
+				1CA765FA1533E5A300051946 /* Supporting Files */,
+			);
+			path = ConwayGameOfLifeiPad;
+			sourceTree = "<group>";
+		};
+		1CA765FA1533E5A300051946 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CA765FB1533E5A300051946 /* ConwayGameOfLifeiPad-Info.plist */,
+				1CA765FC1533E5A300051946 /* InfoPlist.strings */,
+				1CA765FF1533E5A300051946 /* main.m */,
+				1CA766011533E5A300051946 /* ConwayGameOfLifeiPad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CA765F31533E5A200051946 /* ConwayGameOfLifeiPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CA766111533E5A300051946 /* Build configuration list for PBXNativeTarget "ConwayGameOfLifeiPad" */;
+			buildPhases = (
+				1CA765F01533E5A200051946 /* Sources */,
+				1CA765F11533E5A200051946 /* Frameworks */,
+				1CA765F21533E5A200051946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConwayGameOfLifeiPad;
+			productName = ConwayGameOfLifeiPad;
+			productReference = 1CA765F41533E5A200051946 /* ConwayGameOfLifeiPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C583EC91527A30200622FF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 1C583ECC1527A30200622FF3 /* Build configuration list for PBXProject "ConwayGameOfLifeiPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1C583EC71527A30200622FF3;
+			productRefGroup = 1C583ED31527A30200622FF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CA765F31533E5A200051946 /* ConwayGameOfLifeiPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CA765F21533E5A200051946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA765FE1533E5A300051946 /* InfoPlist.strings in Resources */,
+				1CA7660D1533E5A300051946 /* MasterViewController.xib in Resources */,
+				1CA766101533E5A300051946 /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CA765F01533E5A200051946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA766001533E5A300051946 /* main.m in Sources */,
+				1CA766041533E5A300051946 /* AppDelegate.m in Sources */,
+				1CA766071533E5A300051946 /* MasterViewController.m in Sources */,
+				1CA7660A1533E5A300051946 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1C583EDF1527A30200622FF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C583EE01527A30200622FF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1CA765FC1533E5A300051946 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CA765FD1533E5A300051946 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1CA7660B1533E5A300051946 /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CA7660C1533E5A300051946 /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		1CA7660E1533E5A300051946 /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CA7660F1533E5A300051946 /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C583EE81527A30200622FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		1C583EE91527A30200622FF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CA766121533E5A300051946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Timothy Chong";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Timothy Chong";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ConwayGameOfLifeiPad/ConwayGameOfLifeiPad-Prefix.pch";
+				INFOPLIST_FILE = "ConwayGameOfLifeiPad/ConwayGameOfLifeiPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1CA766131533E5A300051946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Timothy Chong";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Timothy Chong";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ConwayGameOfLifeiPad/ConwayGameOfLifeiPad-Prefix.pch";
+				INFOPLIST_FILE = "ConwayGameOfLifeiPad/ConwayGameOfLifeiPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C583ECC1527A30200622FF3 /* Build configuration list for PBXProject "ConwayGameOfLifeiPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C583EE81527A30200622FF3 /* Debug */,
+				1C583EE91527A30200622FF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CA766111533E5A300051946 /* Build configuration list for PBXNativeTarget "ConwayGameOfLifeiPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CA766121533E5A300051946 /* Debug */,
+				1CA766131533E5A300051946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C583EC91527A30200622FF3 /* Project object */;
+}
